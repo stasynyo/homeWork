@@ -13,5 +13,5 @@ void Staff::enterSalary()
 }
 
 void Staff::printSalary() {
-	std::cout << "Staff salary is " << salary << " $\n";
+	std::cout << salary << " $\n";
 }

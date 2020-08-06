@@ -6,7 +6,7 @@ class Staff {
 		virtual void printSpecialty();
 		virtual void enterSalary();
 		virtual void printSalary();
-
+	private:
 		float salary;	
 };
 

@@ -29,8 +29,7 @@ int main()
     for (size_t i = 0; i < 3; i++)
     {
         salaryAll[i]->printSalary();
-        //std::cout << salaryAll[i]->salary << " $\n";
     }
 
-    delete ivan,oleg,vova,salaryAll;
+    delete ivan,oleg,vova;
 }
