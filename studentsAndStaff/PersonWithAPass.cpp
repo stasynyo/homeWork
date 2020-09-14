@@ -6,18 +6,12 @@ unsigned int PersonWithAPass::counterOfSamples = 0;
 void PersonWithAPass::getName() 
 {
 	std::cout << "Enter the name: \n";
-	std::cin >> name;
+	std::cin >> name >> surname;
 }
 
 void PersonWithAPass::setName()
 {
 	std::cout << name << " " << surname << "\n";
-}
-
-void PersonWithAPass::getSurname()
-{
-	std::cout << "Enter the surname: \n";
-	std::cin >> surname;
 }
 
 void PersonWithAPass::getDateOfBday()

@@ -8,7 +8,6 @@ class PersonWithAPass
 public:
 	void getName();
 	void setName();
-	void getSurname();
 	void getDateOfBday();
 	PersonWithAPass();
 	~PersonWithAPass();
