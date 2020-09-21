@@ -5,26 +5,23 @@
 unsigned int Staff::counterOfStaff = 0;
 const unsigned short Staff::startSalary = 1000;
 
-void Staff::getPosition() 
-{
-	std::cout << "Enter the position: ";
-	std::cin >> position;
-}
-
-void Staff::getSalary()
+void Staff::setSalary()
 {
 	std::cout << "Enter the salary: ";
 	std::cin >> salary;
 }
 
-Staff::Staff()
+Staff::Staff(std::string name, std::string surname, std::string dateOfBday, std::string position)
+	:PersonWithAPass(name, surname, dateOfBday),
+	position(position)
 {
 	salary = startSalary;
-	getPosition();
 	counterOfStaff++;
 }
 
 Staff::~Staff()
 {
 }
+
+
 

@@ -3,28 +3,16 @@
 
 unsigned int PersonWithAPass::counterOfSamples = 0;
 
-void PersonWithAPass::getName() 
-{
-	std::cout << "Enter the name: \n";
-	std::cin >> name >> surname;
-}
-
-void PersonWithAPass::setName()
+void PersonWithAPass::printName()
 {
 	std::cout << name << " " << surname << "\n";
 }
 
-void PersonWithAPass::getDateOfBday()
+PersonWithAPass::PersonWithAPass(std::string name, std::string surname, std::string dateOfBday)
+	: name(name),
+	surname (surname),
+	dateOfBday(dateOfBday)
 {
-	std::cout << "Date of birth: \n";
-	std::cin >> dateOfBday;
-}
-
-PersonWithAPass::PersonWithAPass()
-{
-	getName();
-	getSurname();
-	getDateOfBday();
 	counterOfSamples++;
 }
 

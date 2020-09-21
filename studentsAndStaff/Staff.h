@@ -7,10 +7,10 @@
 class Staff:public PersonWithAPass
 {
 public:
-	void getPosition();
-	void getSalary();
-	Staff();
+	Staff(std::string name, std::string surname, std::string dateOfBday, std::string position);
 	~Staff();
+
+	void setSalary();
 
 private:
 	static const unsigned short startSalary;

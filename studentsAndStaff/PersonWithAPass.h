@@ -6,12 +6,11 @@
 class PersonWithAPass
 {
 public:
-	void getName();
-	void setName();
-	void getDateOfBday();
-	PersonWithAPass();
+	PersonWithAPass(std::string name, std::string surname, std::string dateOfBday);
 	~PersonWithAPass();
 
+	void printName();
+		
 private:
 	std::string name;
 	std::string surname;
