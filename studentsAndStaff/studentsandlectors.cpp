@@ -18,8 +18,8 @@
 
 int main()
 {
-    Students* ivan = new Students("Ivan", "Ivanov", "12.12.12", 1, FormOfEducation::DISTANCE_LEARNING, Institute::INSTITUTE_OF_ECONOMIMICS_AND_MANADGEMENT , "Manager" );
-    Students* vova = new Students("Vladimir", "Vladimirov", "13.13.13", 3, FormOfEducation::EVENING_CLASSES, Institute::INSTITUTE_FOR_THE_HUMANITIES, "Historean");
+    Students* ivan = new Students("Ivan", "Ivanov", "12.12.12", 1, Students::FormOfEducation::DISTANCE_LEARNING, Institute::INSTITUTE_OF_ECONOMIMICS_AND_MANADGEMENT , "Manager" );
+    Students* vova = new Students("Vladimir", "Vladimirov", "13.13.13", 3, Students::FormOfEducation::EVENING_CLASSES, Institute::INSTITUTE_FOR_THE_HUMANITIES, "Historean");
 
     Staff* ura = new Staff("Urij", "Gagarin", "14 july 1999", "docent");
     Staff* oleg = new Staff("Oleg", "Miami", "88.88.88", "professor");

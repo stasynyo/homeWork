@@ -3,11 +3,6 @@
 
 #include <string>
 #include "PersonWithAPass.h"
-enum class FormOfEducation {
-	FULLTIME = 1,
-	DISTANCE_LEARNING,
-	EVENING_CLASSES
-};
 
 enum class Institute {
 	INSTITUTE_FOR_THE_HUMANITIES = 1,
@@ -25,6 +20,11 @@ enum class Institute {
 class Students:public PersonWithAPass
 {
 public:
+	enum class FormOfEducation {
+		FULLTIME = 1,
+		DISTANCE_LEARNING,
+		EVENING_CLASSES
+	};
 
 	Students(std::string name, std::string surname, std::string dateOfBday, unsigned short course, FormOfEducation, Institute, std::string specialty);
 	~Students();
